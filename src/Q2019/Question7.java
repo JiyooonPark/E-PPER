@@ -24,19 +24,20 @@ public class Question7 {
             }
         }
 
-        for(int i=0; i<x;i++){
-            for(int j=0;j<y;j++){
-                for(int t=0;t<xs;t++) {
-                    for(int k=0; k<ys; k++){
-                        result[i+t][j+k] = array[i][j];
+        for(int i=0; i< array.length; i++){
+            for(int j=0; j<array[0].length;j++){
+                for(int k=0; k<xs; k++){
+                    for(int l=0; l<ys; l++){
+                        System.out.print(array[i][j]);
                     }
                 }
-            }
+
+            }System.out.println();
         }
-        System.out.println(x*xs+" "+y*ys);
+        //System.out.println(x*xs+" "+y*ys);
         for(int i=0; i<y*ys; i++){
             for(int j=0;j<x*xs; j++){
-                System.out.print("( "+i+","+j+" ) "+result[i][j]);
+                //System.out.print("( "+i+","+j+" ) "+result[i][j]);
             }
             System.out.println();
         }
